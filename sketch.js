@@ -590,7 +590,7 @@ const checkKeyDown = () => {
   if (keyPressedDiff < 4*repeatThreshold) return;
   if (keyPressedDiff%repeatThreshold==0 && [LEFT_ARROW,RIGHT_ARROW,UP_ARROW,DOWN_ARROW,122,90,120,88].some(k=>keyIsDown(k))) {
     const k = [LEFT_ARROW,RIGHT_ARROW,UP_ARROW,DOWN_ARROW,122,90,120,88].sort((a,b)=>lastPresses[b]-lastPresses[a]).find(k=>keyIsDown(k));
-    doKeyPressed(k,k);
+    doKeyPressed((k==122||k==90)?'z':(k==120||k==88)?'x':k,k);
   }
 }
 
