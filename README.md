@@ -1,1 +1,1 @@
-This is the source code for Stackoban, a Sokoban puzzle game variant by Jack Boettcher. Play the game [here](stackoban.github.io)!
+This is the source code for Stackoban, a Sokoban puzzle game variant by Jack Boettcher. Play the game [here](https://stackoban.github.io)!
