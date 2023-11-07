@@ -45,6 +45,7 @@ function setup() {
   menuNum = parseInt(localStorage.getItem("menuNum"));
   if (isNaN(menuNum) || menuNum < 0 || menuNum >= 9) menuNum = 0;
   if (menuNum == 1) menuNum = 0;
+  if (menuNum == 7) menuNum = 4;
   // let level0 = (w%2?"P":"P ")+"1O2O3O4O5O6O7O8O9O"
   // const sides = "X".repeat(Math.floor((w-level0.length)/2));
   // level0 = sides+level0+sides+"\n";
