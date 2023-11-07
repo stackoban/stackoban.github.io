@@ -8,7 +8,7 @@ class Player {
   move(dir,redoing=false) {
     const beforeX = this.x;
     const beforeY = this.y;
-    rememberBlocks = blocks.filter(b=>b.y == 7);
+    if (levelNum == 0) rememberBlocks = blocks.filter(b=>b.y == 7);
     const x = this.x + dir[0]
     const y = this.y + dir[1]
     const pushed = []
