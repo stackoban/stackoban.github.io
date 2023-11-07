@@ -107,7 +107,7 @@ const statRow = "XX                X\n"
 const numStatBottomRows = Math.max(3,Math.ceil((levelStrs.length-10)/3)+Object.keys(getStoredSolves()).filter(i=>parseInt(i)<0).length)
 menuStrs.statsScreen =
 "\n"+" ".repeat(19)+statTop+(" ".repeat(19)+statBlank+" ".repeat(19)+statRow).repeat(3)+
-"XX        9        11111111P                 X\n"+
+"XX        9        P                 X\n"+
 (" ".repeat(19)+statRow+" ".repeat(19)+statBlank).repeat(numStatBottomRows)+" ".repeat(19)+statTop;
 
 const secretBlank = "XXXX"+" ".repeat(17)+"XXXX"+"\n";
