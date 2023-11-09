@@ -353,8 +353,6 @@ const checkBrick = (x,y) => {
 }
 
 const doKeyPressed = (key,keyCode) => {
-  if (disableKeys) return;
-  if ([OPTION,ALT,CONTROL,91,93].some(k=>keyIsDown(k))) return;
   if (key === 'r' || key === 'R') {
     rememberBlocks = [];
     if (menuNum == 1) {
@@ -411,6 +409,8 @@ const doKeyPressed = (key,keyCode) => {
 }
 
 function keyPressed() {
+  if (disableKeys) return;
+  if ([OPTION,ALT,CONTROL,91,93].some(k=>keyIsDown(k))) return;
   keyPressedStartNum = frameCount;
   lastPresses[keyCode] = frameCount;
   doKeyPressed(key,keyCode);
