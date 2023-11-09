@@ -14,6 +14,7 @@ let plusminuses = []
 let empties = []
 let extrablocks = []
 let rememberBlocks = [];
+let statVertPos = 0;
 // let out;
 let bonusPlace = 5
 
@@ -118,6 +119,7 @@ const reset = () => {
   blocks = []
   finishes = [];
   empties = [];
+  statVertPos = 0;
   for (let s of levelStr.split("\n")[0].split(";")) {
     if (!s) continue;
     const [xstr,ystr] = s.split(",");
@@ -498,7 +500,6 @@ const checkTeleport = () => {
   // localStorage.setItem("vertPos",statVertPos);
 }
 
-let statVertPos = 0;
 const drawLevel = () => {
   // push();
   // scale(sc)
