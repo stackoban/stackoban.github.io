@@ -79,7 +79,7 @@ function setup() {
     hammer.on("swipe", swiped);
     hammer.on("doubletap", doubletap);
 
-    document.getElementById("controls").innerText = "Swipe to move. Double tap for menu."
+    document.getElementById("controls").innerText = "Swipe to move. Double tap for menu. (Use desktop for best experience.)"
   }
 }
 
